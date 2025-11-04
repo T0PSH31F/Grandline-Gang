@@ -5,6 +5,12 @@
     ./hardware-configuration.nix
   ];
 
+  # Networking configuration
+  networking.hostName = "luffy";
+  
+  # Clan-core networking for remote deployment
+  clan.core.networking.targetHost = "root@192.168.8.212";
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
